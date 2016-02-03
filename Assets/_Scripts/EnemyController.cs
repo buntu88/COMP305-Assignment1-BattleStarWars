@@ -25,6 +25,7 @@ public class EnemyController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
         this._currentPos = this._tranform.position;
         this._currentPos -= new Vector2(_horizontalDrift, _verticalSpeed);
         this._tranform.position = this._currentPos;
@@ -37,10 +38,14 @@ public class EnemyController : MonoBehaviour {
     public void Reset()
     {
         float yPos = Random.Range(-140f, 140f);
+        float xPos = Random.Range(240f, 400f);
         //add vector
-        this._tranform.position = new Vector2(240, yPos);
+
+
+
+        this._tranform.position = new Vector2(xPos, yPos);
         this._verticalSpeed = Random.Range(this.minVerticalSpeed, this.maxVerticalSpeed);
         this._horizontalDrift = Random.Range(this.minHorizontalSpeed, maxHorizontalSpeed);
-        Debug.Log(_verticalSpeed);
+        //this._horizontalDrift = this.minHorizontalSpeed;
     }
 }

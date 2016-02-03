@@ -5,7 +5,7 @@ public class ShipController : MonoBehaviour
 {
 
     //PUBLIC VARIABLE
-    public float speed = 5;
+    public float speed = 5f;
 
     //PRIVATE INSTANCE VARIABLE
     private float _playerInput;
@@ -51,5 +51,7 @@ public class ShipController : MonoBehaviour
             this._currentPos.y = -140;
         }
         this._transform.position = this._currentPos;
+
+
     }
 }

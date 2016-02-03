@@ -47,6 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\_Scripts\EnemyController.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
+     <Compile Include="Assets\_Scripts\PlanetController.cs" />
+     <Compile Include="Assets\_Scripts\ShipCollider.cs" />
      <Compile Include="Assets\_Scripts\ShipController.cs" />
      <Compile Include="Assets\_Scripts\SpaceController.cs" />
  <Reference Include="UnityEngine.UI">
