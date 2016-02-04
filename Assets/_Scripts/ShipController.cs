@@ -24,7 +24,7 @@ public class ShipController : MonoBehaviour
         this._currentPos = this._transform.position;
 
         this._playerInput = Input.GetAxis("Vertical");
-        Debug.Log(this._playerInput);
+        
 
         //MOVE RIGHT
         if (this._playerInput > 0)

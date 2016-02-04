@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -9,7 +10,8 @@ public class GameController : MonoBehaviour {
     //PUBLIC INSTANCE VARIABLE
     public int enemyNumber = 3;
     public EnemyController enemy;
-
+    public Text Lives;
+    public Text Points;
     // PUBLIC ACCESS METHODS
     public int ScoreValue
     {
@@ -21,7 +23,7 @@ public class GameController : MonoBehaviour {
         set
         {
             this._scoreValue = value;
-            Debug.Log(this._scoreValue);
+            this.Points.text = "Score: "+ this._scoreValue;
         }
     }
 
@@ -36,7 +38,7 @@ public class GameController : MonoBehaviour {
         set
         {
             this._livesValue = value;
-            Debug.Log(this._livesValue);
+            this.Lives.text = "Lives: " + this._livesValue;
         }
     }
 
