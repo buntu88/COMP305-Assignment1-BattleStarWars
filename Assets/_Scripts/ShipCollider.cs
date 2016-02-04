@@ -7,7 +7,6 @@ public class ShipCollider : MonoBehaviour {
     private AudioSource[] _audioSources;
     private AudioSource _enemySound;
     private AudioSource _planetSound;
-
     // PUBLIC INSTANCE VARIABLES
     public GameController gameController;
 
@@ -28,31 +27,21 @@ public class ShipCollider : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.gameObject.CompareTag("Planet"))
         {
-            this._planetSound.Play();
-            this.gameController.ScoreValue += 100;
-            //yield WaitForSeconds (0.5);
+
+                this._planetSound.Play();
+                this.gameController.ScoreValue += 100;
+
         }
         if (other.gameObject.CompareTag("Enemy"))
         {
-            this._enemySound.Play();
-            this.gameController.LivesValue -= 1;
-            //yield WaitForSeconds (0.5);
+
+                this._enemySound.Play();
+                this.gameController.LivesValue -= 1;
         }
+        
     }
 
-
-    //private bool hasCollide = false;
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Enemy")
-    //    {
-    //        if (hasCollide == false)
-    //        {
-    //            hasCollide = true;
-    //            other.gameObject.GetComponent<EnemyHealth>().TakeDamage(WeaponDamage);
-    //        }
-    //    }
-    //}
 }

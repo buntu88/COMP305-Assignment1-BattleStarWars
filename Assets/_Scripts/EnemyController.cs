@@ -3,6 +3,8 @@ using System.Collections;
 
 public class EnemyController : MonoBehaviour {
 
+    
+
     private Transform _tranform;
     private Vector2 _currentPos;
     public float minVerticalSpeed = -2f;
@@ -58,8 +60,11 @@ public class EnemyController : MonoBehaviour {
         }
     }
 
+    
     public void Reset()
     {
+
+
         float yPos = Random.Range(-140f, 140f);
         float xPos = Random.Range(240f, 400f);
         //add vector
@@ -69,6 +74,6 @@ public class EnemyController : MonoBehaviour {
         this._tranform.position = new Vector2(xPos, yPos);
         this._verticalSpeed = Random.Range(this.minVerticalSpeed, this.maxVerticalSpeed);
         this._horizontalDrift = Random.Range(this.minHorizontalSpeed, maxHorizontalSpeed);
-        //this._horizontalDrift = this.minHorizontalSpeed;
+        
     }
 }

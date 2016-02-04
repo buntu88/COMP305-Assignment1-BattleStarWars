@@ -6,13 +6,14 @@ public class GameController : MonoBehaviour {
 
     private int _scoreValue;
     private int _livesValue;
-
+    private int enemyNumber = 2;
+    private int difficultyBenchmark = 1500;
 
     [SerializeField]
     private AudioSource _gameOver;
 
     //PUBLIC INSTANCE VARIABLE
-    public int enemyNumber = 3;
+    
     public Text Lives;
     public Text Points;
     public Text GameOverLabel;
@@ -36,7 +37,16 @@ public class GameController : MonoBehaviour {
             this._scoreValue = value;
             
             this.Points.text = "Score: "+ this._scoreValue;
-            
+            if(this._scoreValue == this.difficultyBenchmark)
+            {
+                this.enemyNumber = 1;
+                enemyGenerator();
+            }
+            if (this._scoreValue == this.difficultyBenchmark*2)
+            {
+                this.enemyNumber = 1;
+                enemyGenerator();
+            }
         }
     }
 
@@ -74,6 +84,12 @@ public class GameController : MonoBehaviour {
         this.LivesValue = 5;
         this.GameOverLabel.enabled = false;
         this.ResetButton.gameObject.SetActive(false);
+        enemyGenerator();
+
+    }
+
+    public void enemyGenerator()
+    {
         for (int enemyCount = 0; enemyCount < this.enemyNumber; enemyCount++)
         {
             Instantiate(enemy.gameObject);
