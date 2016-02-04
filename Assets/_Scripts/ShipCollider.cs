@@ -32,11 +32,27 @@ public class ShipCollider : MonoBehaviour {
         {
             this._planetSound.Play();
             this.gameController.ScoreValue += 100;
+            //yield WaitForSeconds (0.5);
         }
         if (other.gameObject.CompareTag("Enemy"))
         {
             this._enemySound.Play();
             this.gameController.LivesValue -= 1;
+            //yield WaitForSeconds (0.5);
         }
     }
+
+
+    //private bool hasCollide = false;
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Enemy")
+    //    {
+    //        if (hasCollide == false)
+    //        {
+    //            hasCollide = true;
+    //            other.gameObject.GetComponent<EnemyHealth>().TakeDamage(WeaponDamage);
+    //        }
+    //    }
+    //}
 }

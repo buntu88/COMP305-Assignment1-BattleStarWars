@@ -21,13 +21,36 @@ public class EnemyController : MonoBehaviour {
 
 
     }
+    public GameController gameController;
+    public void OnTriggerEnter2D(Collider2D other)
+    {
 
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            this._verticalSpeed = -this._verticalSpeed;
+
+
+        }
+    }
     // Update is called once per frame
     void Update()
     {
 
         this._currentPos = this._tranform.position;
         this._currentPos -= new Vector2(_horizontalDrift, _verticalSpeed);
+
+        if (this._currentPos.y > 135f)
+        {
+            
+            this._verticalSpeed = -this._verticalSpeed;
+        }
+
+        if (this._currentPos.y < -135f)
+        {
+           
+            this._verticalSpeed = -this._verticalSpeed;
+        }
+
         this._tranform.position = this._currentPos;
         if (this._currentPos.x <= -245)
         {

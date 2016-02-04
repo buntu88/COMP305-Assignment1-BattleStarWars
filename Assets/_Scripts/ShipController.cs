@@ -41,14 +41,14 @@ public class ShipController : MonoBehaviour
 
         }
 
-        if (this._currentPos.y > 140)
+        if (this._currentPos.y > 135)
         {
-            this._currentPos.y = 140;
+            this._currentPos.y = 135;
         }
 
-        if (this._currentPos.y < -140)
+        if (this._currentPos.y < -135)
         {
-            this._currentPos.y = -140;
+            this._currentPos.y = -135;
         }
         this._transform.position = this._currentPos;
 
