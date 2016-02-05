@@ -48,11 +48,13 @@ public class GameController : MonoBehaviour {
             if(this._scoreValue == this.difficultyBenchmark)
             {
                 this.enemyNumber = 1;
+                this._livesValue++;
                 enemyGenerator();
             }
             if (this._scoreValue == this.difficultyBenchmark*2)
             {
                 this.enemyNumber = 1;
+                this._livesValue++;
                 enemyGenerator();
             }
         }
