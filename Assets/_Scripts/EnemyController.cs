@@ -1,6 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
+//Source file name      EnemyController
+//Last Modified by      Vishal Guleria
+//Date last Modified    February 4,2016
+//Program description   COMP305 - Assignment 1 - BattleStar Wars    
+//Revision History      v11
+
+
+
 public class EnemyController : MonoBehaviour {
 
     
@@ -19,8 +29,6 @@ public class EnemyController : MonoBehaviour {
         //link the tranform - make refrence with transform componenent
         this._tranform = gameObject.GetComponent<Transform>();
         this.Reset();
-
-
 
     }
     public GameController gameController;
@@ -66,7 +74,7 @@ public class EnemyController : MonoBehaviour {
 
 
         float yPos = Random.Range(-140f, 140f);
-        float xPos = Random.Range(240f, 400f);
+        float xPos = Random.Range(240f, 500f);
         //add vector
 
 

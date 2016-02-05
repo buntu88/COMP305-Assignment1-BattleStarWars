@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+//Source file name      ShipController
+//Last Modified by      Vishal Guleria
+//Date last Modified    February 4,2016
+//Program description   COMP305 - Assignment 1 - BattleStar Wars    
+//Revision History      v11
+
+
 public class ShipController : MonoBehaviour
 {
 
@@ -40,6 +48,8 @@ public class ShipController : MonoBehaviour
             this._currentPos -= new Vector2(0, this.speed);
 
         }
+
+        //Ristrict the player to the boundaries
 
         if (this._currentPos.y > 135)
         {

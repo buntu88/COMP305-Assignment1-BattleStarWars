@@ -1,12 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+//Source file name      SpahipCollider
+//Last Modified by      Vishal Guleria
+//Date last Modified    February 4,2016
+//Program description   COMP305 - Assignment 1 - BattleStar Wars    
+//Revision History      v11
+
+
 public class ShipCollider : MonoBehaviour {
 
     // PRIVATE INSTANCE VARIABLES
     private AudioSource[] _audioSources;
     private AudioSource _enemySound;
     private AudioSource _planetSound;
+
     // PUBLIC INSTANCE VARIABLES
     public GameController gameController;
 

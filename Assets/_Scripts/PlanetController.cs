@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+//Source file name      PlanetController
+//Last Modified by      Vishal Guleria
+//Date last Modified    February 4,2016
+//Program description   COMP305 - Assignment 1 - BattleStar Wars    
+//Revision History      v11
+
+
 public class PlanetController : MonoBehaviour {
 	// PUBLIC INSTANCE VARIABLES
 	private float speed = 5f;

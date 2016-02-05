@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 1.CSharp", "Assignment 1.CSharp.csproj", "{779F3D8E-0281-6B20-5A87-9C3BDB3AC70F}"
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "300813391Assignment1BattleStarWars.CSharp", "300813391Assignment1BattleStarWars.CSharp.csproj", "{779F3D8E-0281-6B20-5A87-9C3BDB3AC70F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,17 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+//Source file name      SpaceController
+//Last Modified by      Vishal Guleria
+//Date last Modified    February 4,2016
+//Program description   COMP305 - Assignment 1 - BattleStar Wars    
+//Revision History      v11
+
+
 public class SpaceController : MonoBehaviour {
 
     //PRIVATE INSTANCE VARIABLE
     private Transform _tranform;
-    public float speed = 5;
     private Vector2 _currentPos;
 
-
+    public float speed = 5;
 
     // Use this for initialization
-	void Start () {
+    void Start () {
         //link the tranform - make refrence with transform componenent
         this._tranform = gameObject.GetComponent<Transform>();
         this.Reset();

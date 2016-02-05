@@ -2,6 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 
+
+//Source file name      GameController
+//Last Modified by      Vishal Guleria
+//Date last Modified    February 4,2016
+//Program description   COMP305 - Assignment 1 - BattleStar Wars    
+//Revision History      v11
+
+
 public class GameController : MonoBehaviour {
 
     private int _scoreValue;
@@ -88,6 +96,8 @@ public class GameController : MonoBehaviour {
 
     }
 
+
+    //Generate more enemies on high level
     public void enemyGenerator()
     {
         for (int enemyCount = 0; enemyCount < this.enemyNumber; enemyCount++)
